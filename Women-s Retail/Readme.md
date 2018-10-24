@@ -1,51 +1,25 @@
 
-# Project Name: Cardiac Arrhythmia
+# Project Name: Prediction of ratings based on women’s e-commerce reviews
 # Problem Statement: 
 
-The Electrocardiogram (ECG) is an established technique in cardiology for the analysis of cardiac condition of the patients. In its basic definition, ECG is the electrical representation of the contractile activity of the heart, and can be recorded fairly easily by using surface electrodes on the limbs or chest of the patient. The ECG is one of the most recognized and used biomedical signal in the field of medicine. The rhythm of the heart in terms of beats per minute (bpm) can be easily calculated by counting the R peaks of the ECG wave during one minute of recording. More importantly, rhythm and the morphology of the ECG waveform is altered by cardiovascular diseases and abnormalities such as the cardiac arrhythmias, which their automatic
-detection and classification is the main focus of this study.
+    E-commerce is the activity of buying or selling of products on online services or over the Internet1. Ecommerce refers to commercial transactions conducted online. This means that whenever you buy and sell something using the Internet, you’re involved in e-commerce.
 
+		Needless to say, e-commerce has grown by leaps and bounds since the first time e-commerce transaction was committed in 1994. BigCommerce cites that e-commerce is growing 23% year-over-year, and according to eMarkerter, global e-commerce sales are expected to top $27 trillion in 2020 — and that’s just statistics for the retail sector.
 
-The aim of this project is to distinguish between the presence and absence of cardiac arrhythmia and to classify it in one of the 16 groups. 
-  
-      Class 01 refers to NORMAL ECG
-      
-      Classes 02 -15 refers to different classes of arrhythmia 
-      
-      Class 16 refers to the rest of unclassified ones. 
-      
-      
-   Class Distribution:
-   
-       Class code :   Class   :                       Number of instances:
-       01             Normal                                        245
-       02             Ischemic changes (Coronary Artery Disease)    44
-       03             Old Anterior Myocardial Infarction            15
-       04             Old Inferior Myocardial Infarction            15
-       05             Sinus tachycardy                              13
-       06             Sinus bradycardy                              25
-       07             Ventricular Premature Contraction (PVC)       3
-       08             Supraventricular Premature Contraction        2
-       09             Left bundle branch block                      9	
-       10             Right bundle branch block                     50
-       11             1. degree AtrioVentricular block              0	
-       12             2. degree AV block                            0
-       13             3. degree AV block                            0
-       14             Left ventricule hypertrophy                   4
-       15             Atrial Fibrillation or Flutter                5
-       16             Others                                        22
-   
-   There are some softwares making such a classification. However there are differences between the cardiologist's and the programs classification. Taking the cardiologist's as a gold standard we aim to minimize this difference by means of machine learning tools." 
+    Global retail e-commerce sales are projected to reach $27 trillion by 2020. It’s obvious that, each day e-commerce will be more and more important for the companies.
+
+		This project aims using NLP techniques, different machine learning models and Deep Learning for predicting the rates of the products into 2 categories (good, bad).
+
 
 # Data set: 
-  The data set of project is from UC Irvine Machine Learning Repository.
-  https://archive.ics.uci.edu/ml/machine-learning-databases/arrhythmia/arrhythmia.data
+  The data set of project is from Kaggle.
+  https://www.kaggle.com/nicapotato/womens-ecommerce-clothing-reviews
   
-  Cardiac Arrythmia Database contains 279 attributes, 206 of which are linear valued and the rest are nominal.
-  
-  Number of Instances: 452
-  Number of Attributes: 279
+ There are 23486 rows, each representing a review for a different clothing item. 
+	
+	There are 10 attributes like clothing id, age, title,  review text, etc. The data set is labeled with 2 different classes. Class 1 corresponds to positively rated item. Class 0 corresponds to negatively rated item.
+
+	The data set is looking like biased towards positive ratings but there are enough samples of negative ratings for ML models to make predictions.
   
   The CSV file uploaded to Github repository as well.
-  https://github.com/MuzafferEstelik/Capstone_Project_1/blob/master/arrhythmia.csv
   
